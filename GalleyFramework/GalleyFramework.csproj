@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7BE4F0D-A0B6-4FCA-B42D-AB95944BB561}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UseMSBuildEngine>true</UseMSBuildEngine>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GalleyFramework</RootNamespace>
+    <AssemblyName>GalleyFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Extensions\ColorExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\ViewExtensions.cs" />
+    <Compile Include="Helpers\GalleyHttpHelper.cs" />
+    <Compile Include="ViewModels\GalleyBaseViewModel.cs" />
+    <Compile Include="Views\Popups\GalleyBasePopup.cs" />
+    <Compile Include="Helpers\Interfaces\IHttpHelper.cs" />
+    <Compile Include="Helpers\GalleyDialogHelper.cs" />
+    <Compile Include="Helpers\GalleyNavigationHelper.cs" />
+    <Compile Include="ViewModels\Flow\GalleyBaseSignal.cs" />
+    <Compile Include="ViewModels\Flow\GalleyArgsWrapper.cs" />
+    <Compile Include="ViewModels\Flow\GalleyCommand.cs" />
+    <Compile Include="Helpers\Static\GalleyJsonHelper.cs" />
+    <Compile Include="Helpers\Interfaces\IDialogHelper.cs" />
+    <Compile Include="Helpers\Interfaces\INavigationHelper.cs" />
+    <Compile Include="Infrastructure\Galley.cs" />
+    <Compile Include="Views\GalleyBaseView.cs" />
+    <Compile Include="GalleyApp.cs" />
+    <Compile Include="Views\GalleySuperView.cs" />
+    <Compile Include="Helpers\Flow\GalleyNavigationStack.cs" />
+    <Compile Include="Helpers\Flow\GalleyNavigationLayer.cs" />
+    <Compile Include="Helpers\Flow\GalleyViewItem.cs" />
+    <Compile Include="Helpers\Flow\GalleyCreateType.cs" />
+    <Compile Include="Infrastructure\GalleyInitializer.cs" />
+    <Compile Include="GalleySuperPage.cs" />
+    <Compile Include="Views\Controls\GalleyLoadingOverlay.cs" />
+    <Compile Include="Helpers\Flow\GalleyResponse.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Helpers\Flow\GalleyBaseLocale.cs" />
+    <Compile Include="Helpers\GalleyLocalizationHelper.cs" />
+    <Compile Include="Helpers\Interfaces\ILocalizationHelper.cs" />
+    <Compile Include="Views\GalleyBaseMasterView.cs" />
+    <Compile Include="Extensions\BoolExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Infrastructure\GalleyViewsFactory.cs" />
+    <Compile Include="ViewModels\GalleyBaseMasterViewModel.cs" />
+    <Compile Include="Views\Interfaces\IGalleyBaseView.cs" />
+    <Compile Include="Views\Interfaces\IGalleyMasterDetailView.cs" />
+    <Compile Include="Views\Interfaces\IGalleyFloatingControlsHolderView.cs" />
+    <Compile Include="Extensions\TaskExtensions.cs" />
+    <Compile Include="Views\Controls\GalleyMasterCloseOverlay.cs" />
+    <Compile Include="ViewModels\Flow\GalleyObservableCollection.cs" />
+    <Compile Include="Views\Animations\IGalleySuperViewAnimation.cs" />
+    <Compile Include="Views\Controls\GalleyButton.cs" />
+    <Compile Include="Views\Converters\GalleyConverter.cs" />
+    <Compile Include="Extensions\Flow\AbsFlags.cs" />
+    <Compile Include="Helpers\Static\GalleyActionHelper.cs" />
+    <Compile Include="Views\Controls\GalleySideScrollView.cs" />
+    <Compile Include="Views\GalleyMasterSideScrollView.cs" />
+    <Compile Include="ViewModels\Flow\GalleyCommandsHolder.cs" />
+    <Compile Include="Extensions\Flow\ExecuteStrategy.cs" />
+    <Compile Include="ViewModels\Flow\GalleySignalDispatcher.cs" />
+    <Compile Include="ViewModels\Flow\IGalleySignalHandler.cs" />
+    <Compile Include="Views\Popups\Flow\IGalleyModalView.cs" />
+    <Compile Include="Views\Popups\Flow\GalleyPopupsCounter.cs" />
+    <Compile Include="Views\Controls\GalleyImageButton.cs" />
+    <Compile Include="Extensions\ImageButtonPositionExtensions.cs" />
+    <Compile Include="Views\Controls\GalleyTapableLayout.cs" />
+    <Compile Include="Views\Behaviors\GalleyFadeChildBehavior.cs" />
+    <Compile Include="Views\Controls\GalleyExpandableLayout.cs" />
+    <Compile Include="Helpers\Interfaces\Services\IDialogService.cs" />
+    <Compile Include="Helpers\Flow\GalleyRequest.cs" />
+    <Compile Include="Helpers\Flow\GalleyFont.cs" />
+    <Compile Include="Views\Animations\GalleySwitchAnimation.cs" />
+    <Compile Include="Views\Animations\GalleyPushAnimation.cs" />
+    <Compile Include="Views\Animations\GalleyPopAnimation.cs" />
+    <Compile Include="Helpers\GalleyDeviceHelper.cs" />
+    <Compile Include="Helpers\Interfaces\IDeviceHelper.cs" />
+    <Compile Include="Helpers\Interfaces\Services\IDeviceService.cs" />
+    <Compile Include="Helpers\Flow\Exceptions\GalleyResponseHandledException.cs" />
+    <Compile Include="Helpers\Flow\Exceptions\GalleyException.cs" />
+    <Compile Include="Helpers\Flow\Exceptions\GalleyHandledException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Popups\" />
+    <Folder Include="Helpers\Interfaces\" />
+    <Folder Include="ViewModels\Flow\" />
+    <Folder Include="Helpers\Static\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Helpers\Flow\" />
+    <Folder Include="Views\Controls\" />
+    <Folder Include="Views\Interfaces\" />
+    <Folder Include="Views\Animations\" />
+    <Folder Include="Views\Converters\" />
+    <Folder Include="Extensions\Flow\" />
+    <Folder Include="Views\Popups\Flow\" />
+    <Folder Include="Views\Behaviors\" />
+    <Folder Include="Helpers\Interfaces\Services\" />
+    <Folder Include="Helpers\Flow\Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ModernHttpClient">
+      <HintPath>..\GalleyFramework.Sample\packages\Ideine.ModernHttpClient.3.2.2\lib\Portable-Net45+WinRT45+WP8+WPA81\ModernHttpClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\GalleyFramework.Sample\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\GalleyFramework.Sample\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\GalleyFramework.Sample\packages\Xamarin.Forms.2.5.0.122203\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\GalleyFramework.Sample\packages\Xamarin.Forms.2.5.0.122203\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\GalleyFramework.Sample\packages\Xamarin.Forms.2.5.0.122203\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\GalleyFramework.Sample\packages\Newtonsoft.Json.11.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Fody.2.0.0\build\portable-net+sl+win+wpa+wp\Fody.targets" Condition="Exists('..\packages\Fody.2.0.0\build\portable-net+sl+win+wpa+wp\Fody.targets')" />
+  <Import Project="..\GalleyFramework.Sample\packages\Xamarin.Forms.2.5.0.122203\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\GalleyFramework.Sample\packages\Xamarin.Forms.2.5.0.122203\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
+</Project>

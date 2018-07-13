@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>GalleyFramework</id>
+    <version>1.4.6</version>
+    <title>GalleyFramework</title>
+    <authors>Andrei Misiukevich</authors>
+    <owners>Andrei Misiukevich</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>https://github.com/AndreiMisiukevich/GalleyFramework</description>
+    <summary>This framework was created for comfortable Xamarin Forms develompent</summary>
+    <dependencies>
+      <group>
+          <dependency id="Ideine.ModernHttpClient" version="3.2.2" />
+          <dependency id="Newtonsoft.Json" version="11.0.1" />
+          <dependency id="Xam.Plugin.Connectivity" version="3.1.1" />
+          <dependency id="Xamarin.Forms" version="2.5.0.121934" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="GalleyFramework/bin/Release/GalleyFramework.dll" target="lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid403+MonoTouch10+Xamarin.iOS10/GalleyFramework.dll" />
+
+    <file src="GalleyFramework.Droid/bin/Release/GalleyFramework.Droid.dll" target="lib/MonoAndroid403/GalleyFramework.Droid.dll" />
+    <file src="GalleyFramework/bin/Release/GalleyFramework.dll" target="lib/MonoAndroid403/GalleyFramework.dll" />
+
+    <file src="GalleyFramework.iOS/bin/Release/GalleyFramework.iOS.dll" target="lib/MonoTouch10/GalleyFramework.iOS.dll" />
+    <file src="GalleyFramework/bin/Release/GalleyFramework.dll" target="lib/MonoTouch10/GalleyFramework.dll" />
+
+    <file src="GalleyFramework.iOS/bin/Release/GalleyFramework.iOS.dll" target="lib/Xamarin.iOS10/GalleyFramework.iOS.dll" />
+    <file src="GalleyFramework/bin/Release/GalleyFramework.dll" target="lib/Xamarin.iOS10/GalleyFramework.dll" />
+  </files>
+</package>
